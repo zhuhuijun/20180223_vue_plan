@@ -1,12 +1,12 @@
 <template>
-    <div>Home</div>
+    <div></div>
 </template>
 <style scoped>
 
 </style>
 
 <script>
-  export default {
+    export default {
         data() {
             return {}
         },

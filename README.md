@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+``` bash**
 # install dependencies
 npm install
 
@@ -21,6 +21,6 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 ```
 1. cnpm install -g vue-cli
-2.vue init webpack plan
+2. vue init webpack plan
 3. cnpm inatall bootstrap vuex --save
 ```

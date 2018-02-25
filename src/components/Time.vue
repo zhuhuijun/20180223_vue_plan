@@ -1,15 +1,15 @@
 <template>
-
+  <div>Time</div>
 </template>
 
 <script>
-    export default {
-      data(){
-
-      },
-      components:{},
-      methods:{}
-    }
+  export default {
+    data(){
+      return {}
+    },
+    components:{},
+    methods:{}
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

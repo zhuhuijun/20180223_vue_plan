@@ -1,23 +1,34 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <NavBar/>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ">
+          <div class="col-md-3 ">
+            <SlideBar></SlideBar>
+          </div>
+          <div class="col-md-9  ">
+            <router-view></router-view>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import NavBar from '@/components/NavBar';
+  import SlideBar from '@/components/SlideBar';
+
+  export default {
+    components: {
+      NavBar, SlideBar
+    }
+  }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
