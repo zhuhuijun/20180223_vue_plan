@@ -15,8 +15,9 @@ export default new Router({
       path: '/time',
       component: Time,
       children:[
-        {path:'/time-add',component:Add}
+        {path:'time-add',component:Add}
       ]
-    }
+    },
+    {path:'*',component:Home}
   ]
 })

@@ -20,7 +20,7 @@
 
 <script>
   import NavBar from '@/components/NavBar';
-  import SlideBar from '@/components/SlideBar';
+  import SlideBar from "@/components/SlideBar";
 
   export default {
     components: {

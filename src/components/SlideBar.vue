@@ -5,7 +5,7 @@
         <h2>计划时间</h2>
       </div>
       <div class="panel-body">
-        <h3>小时</h3>
+        <h3>{{time}}小时</h3>
       </div>
     </div>
   </div>
@@ -15,12 +15,15 @@
 </style>
 
 <script>
-
-  export default {
-    data() {
-      return {}
-    },
-    components: {},
-    methods: {}
-  }
+import { mapState } from "vuex";
+export default {
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapState({ time: "totalTime" })
+  },
+  components: {},
+  methods: {}
+};
 </script>
