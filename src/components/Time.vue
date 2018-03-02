@@ -28,18 +28,22 @@
         </div>
       </li>
     </ul>
+        <div class="text-warning h2" v-show="!isShow">
+      你的计划空空如也
+    </div>
   </div>
 </template>
 
 <script>
 import * as Types from "@/store/types";
-import { mapState, mapActions } from "vuex";
+import { mapState, mapActions, mapGetters } from "vuex";
 export default {
   data() {
     return {};
   },
   computed: {
-    ...mapState({ lists: "lists" })
+    ...mapState({ lists: "lists" }),
+    ...mapGetters(['isShow'])
   },
   components: {},
   methods: {
