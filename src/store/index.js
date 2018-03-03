@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-
+import {getStorage} from './local';
 Vue.use(Vuex);
-const state =  {
+const state =getStorage||  {
   totalTime: 0,
   lists: []
 };
